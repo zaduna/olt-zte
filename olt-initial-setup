@@ -55,7 +55,8 @@ interface gpon-onu_1/2/7:1
 pon-onu-mng gpon-onu_1/2/7:1
   service 1 gemport 1 cos 0 vlan 100
   wan-ip 1 mode pppoe username 01bumdes password 01BUMDES vlan-profile PPPOE host 1
-!
+  wan-ip 1 ping-response enable traceroute-response enable
+  security-mgmt 1 state enable mode forward protocol web
 !
 pon-onu-mng gpon-onu_1/2/8:42
   service 1 gemport 1 cos 0 vlan 200
@@ -89,7 +90,7 @@ interface xgei_1/4/2
 ip route 0.0.0.0 0.0.0.0 172.16.1.1
 !
 auto-write enable
-auto-write 23:59:00  everyday
+auto-write 00:00:00 everyday
 !
 snmp-server community ztero view AllView ro
 snmp-server community zterw view AllView rw
