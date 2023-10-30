@@ -29,3 +29,15 @@ Search result
 -----------------
 gpon-onu_1/1/2:4
 
+#show vlan 500
+vlanid          :500
+name            :VLAN0500
+description     :N/A
+multicast-packet:flood-unknown
+tpid            :0x8100
+vlan connect    :disable
+port(untagged):
+
+port(tagged):
+  gpon-onu_1/2/1:128:1,16:3:1
+  xgei_1/4/2  
