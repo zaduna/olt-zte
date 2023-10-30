@@ -19,3 +19,45 @@ ONU Number: 3/5
 .......................................
 174201              7343
 
+#show gpon onu detail-info gpon-onu_1/2/7:4
+
+ONU interface:         gpon-onu_1/2/7:4
+  Name:                816811156 EMI ELAS SUARSIH_BOJONG RAWALUMBU
+  Type:                ALL-ONT
+  State:               ready
+  Configured channel:  auto
+  Current channel:     1(GPON)
+  Admin state:         enable
+  Phase state:         working
+  Config state:        success
+  Authentication mode: sn
+  SN Bind:             enable with SN check
+  Serial number:       HWTC5301AAA8
+  Password:            
+  Description:         8$$$$
+  Vport mode:          gemport
+  DBA Mode:            Hybrid
+  ONU Status:          enable
+  OMCI BW Profile:     
+  Line Profile:        N/A
+  Service Profile:     N/A
+  ONU Distance:        7343m
+  Online Duration:     2h 23m 37s
+  FEC:                 none
+  FEC actual mode:     N/A
+  1PPS+ToD:            disable
+  Auto replace:        disable 
+  Multicast encryption:disable
+  Multicast encryption current state:N/A
+------------------------------------------
+       Authpass Time          OfflineTime             Cause
+   1   2023-09-15 20:50:12    2023-09-21 07:22:26     LOS      
+   2   2023-09-21 07:22:46    2023-09-21 07:24:09     LOSi     
+   3   2023-09-21 07:24:44    2023-10-16 09:02:42     LOSi     
+   4   2023-10-16 15:48:53    2023-10-29 18:38:14     DyingGasp 
+   5   2023-10-29 18:49:54    2023-10-30 02:42:07     LOS      
+   6   2023-10-30 02:46:37    2023-10-30 02:47:47     LOSi     
+   7   2023-10-30 02:48:06    2023-10-30 02:51:16     LOS      
+   8   2023-10-30 02:56:15    2023-10-30 03:06:20     LOS      
+   9   2023-10-30 03:06:47    2023-10-30 03:06:51     LOS      
+  10   2023-10-30 03:07:27    0000-00-00 00:00:00           
