@@ -1,0 +1,45 @@
+#show gpon remote-onu equip gpon-onu_1/2/5:5
+Vendor ID:                 ZTEG 
+Version:                   V9.0 
+SN:                        ZTEGcfeb358e 
+Admin status:              unlock 
+Battery monitor:           false 
+Security mode:             aes 
+Product code:              0 
+Total priority queue num:  120 
+Total traffic schedule num:15 
+Traffic management option: priority-rate-controlled 
+Operate status:            enable 
+Equipment ID:              F609V9.0 
+OMCC version:              b2 
+Security capability:       aes
+Model:                     F609V9.0
+Survival time:             N/A
+Total GEM port num:        256
+System uptime:             315412.00 s
+Region code:               N/A
+Product SN:                N/A
+Chip info:                 0
+
+#show gpon remote-onu equip gpon-onu_1/1/3:2
+Vendor ID:                 HWTC 
+Version:                   150D.B 
+SN:                        HWTC105e98a4 
+Admin status:              unlock 
+Battery monitor:           false 
+Security mode:             aes 
+Product code:              336 
+Total priority queue num:  64 
+Total traffic schedule num:2 
+Traffic management option: priority-controlled 
+Operate status:            enable 
+Equipment ID:              HG8245H5 
+OMCC version:              b0 
+Security capability:       aes
+Model:                     HG8245H5
+Survival time:             N/A
+Total GEM port num:        32
+System uptime:             187817.00 s
+Region code:               N/A
+Product SN:                N/A
+Chip info:                 0
