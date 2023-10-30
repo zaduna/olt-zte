@@ -1,0 +1,31 @@
+#show system-group
+System Description: C320 Version V2.1.0 Software, Copyright (c) by ZTE Corporation Compiled
+System ObjectId: .1.3.6.1.4.1.3902.1082.1001.320.2.1
+Started before: 9 days, 14 hours, 6 minutes
+Contact with: noc@wifian.id
+System name:  OLT-C320
+Location: Bekasi, Indonesia
+System Info:  11490  822e69ee
+This system primarily offers a set of 78 services
+
+#show card
+Rack Shelf Slot CfgType RealType Port  HardVer SoftVer         Status
+-------------------------------------------------------------------------------
+1    1     1    GTGO    GTGOG    8     V1.0.0  V2.1.0          INSERVICE
+1    1     2    GTGH    GTGHK    16    V1.0.0  V2.1.0          INSERVICE
+1    1     3    SMXA    SMXA     3     V1.0.0  V2.1.0          STANDBY
+1    1     4    SMXA    SMXA     3     V1.0.0  V2.1.0          INSERVICE
+
+#show processor 
+Rack   Shelf    Slot   CPU(5s)   CPU(1m)    CPU(5m)   PhyMem(MB)  Memory    
+-------------------------------------------------------------------------------
+1       1       1       9%        11%       11%       512         25%
+1       1       2       11%       11%       11%       512         57%
+1       1       3       7%        8%        8%        2048        25%
+1       1       4       11%       11%       14%       2048        25%
+
+#show gpon onu by sn FHTT9B047C58
+Search result          
+-----------------
+gpon-onu_1/1/2:4
+
