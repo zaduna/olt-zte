@@ -1,0 +1,4 @@
+#show gpon onu distance gpon-onu_1/2/7:4
+    Eqd (bit)       Distance(m)
+.......................................
+174201              7343
