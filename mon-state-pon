@@ -7,3 +7,15 @@ OnuIndex   Admin State  OMCC State  Phase State  Channel
 1/2/7:4     enable       enable      working      1(GPON)
 1/2/7:5     enable       enable      working      1(GPON)
 ONU Number: 3/5
+
+#show gpon onu state gpon-olt_1/2/7 1
+OnuIndex   Admin State  OMCC State  Phase State  Channel    
+--------------------------------------------------------------
+1/2/7:1     enable       disable     LOS          1(GPON)
+ONU Number: 0/1        
+
+#show gpon onu state gpon-olt_1/2/7 2
+OnuIndex   Admin State  OMCC State  Phase State  Channel    
+--------------------------------------------------------------
+1/2/7:2     enable       enable      working      1(GPON)
+ONU Number: 1/1        
