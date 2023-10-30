@@ -1,0 +1,14 @@
+#show interface gpon-onu_1/1/2:6
+ONU statistic:
+   Input rate :              44724 Bps              350 pps
+   Output rate:             683377 Bps              624 pps
+   Input bandwidth thoughput :0.0%    
+   Output bandwidth thoughput: N/A    
+Interface peak rate:
+   Input peak rate :            1811088 Bps             2014 pps
+   Output peak rate:            2640371 Bps             2120 pps
+Total statistic:
+  Input:
+    Bytes:158107482655         Packets:1048300622          
+  Output:
+    Bytes:2431794043764        Packets:3625474903          
