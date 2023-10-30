@@ -1,0 +1,6 @@
+#show pon power attenuation gpon-onu_1/1/1:2
+           OLT                  ONU              Attenuation
+--------------------------------------------------------------------------
+ up      Rx :-22.967(dbm)      Tx:2.332(dbm)        25.299(dB)     
+ down    Tx :6.451(dbm)        Rx:-19.588(dbm)      26.039(dB) 
+
