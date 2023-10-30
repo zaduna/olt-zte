@@ -1,0 +1,4 @@
+OLT-C320#conf t
+%Info 20272: Enter configuration commands, one per line. End with CTRL/Z.
+OLT-C320(config)#pon-onu-mng gpon-onu_1/2/1:128
+OLT-C320(gpon-onu-mng 1/2/1:128)#reboot
