@@ -1,0 +1,72 @@
+#show gpon remote-onu interface eth gpon-onu_1/1/3:2
+
+Interface      : eth_0/1
+Speed status   : auto
+Operate status : enable
+Admin status   : unlock
+ARC            : 0  
+ARC interval   : 0
+Expect type    : 0
+Speed config   : auto
+Ethernet loop  : disable
+Max frame      : 1632
+Pause time     : 0
+Wiring         : dce
+Bridge or IP   : either
+PPPoE filter   : disable
+Power control  : disable
+Status changes : 0
+
+
+Interface      : eth_0/2
+Speed status   : auto
+Operate status : enable
+Admin status   : unlock
+ARC            : 0  
+ARC interval   : 0
+Expect type    : 0
+Speed config   : auto
+Ethernet loop  : disable
+Max frame      : 1632
+Pause time     : 0
+Wiring         : dce
+Bridge or IP   : either
+PPPoE filter   : disable
+Power control  : disable
+Status changes : 0
+
+
+Interface      : eth_0/3
+Speed status   : auto
+Operate status : enable
+Admin status   : unlock
+ARC            : 0  
+ARC interval   : 0
+Expect type    : 0
+Speed config   : auto
+Ethernet loop  : disable
+Max frame      : 1632
+Pause time     : 0
+Wiring         : dce
+Bridge or IP   : either
+PPPoE filter   : disable
+Power control  : disable
+Status changes : 0
+
+
+Interface      : eth_0/4
+Speed status   : auto
+Operate status : enable
+Admin status   : unlock
+ARC            : 0  
+ARC interval   : 0
+Expect type    : 0
+Speed config   : auto
+Ethernet loop  : disable
+Max frame      : 1632
+Pause time     : 0
+Wiring         : dce
+Bridge or IP   : either
+PPPoE filter   : disable
+Power control  : disable
+Status changes : 0
