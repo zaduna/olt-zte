@@ -1,0 +1,10 @@
+#show mac gpon onu gpon-onu_1/1/3:2
+Total mac address : 1
+
+Mac address      Vlan  Type      Port                     Vc                                 
+-------------------------------------------------------------------------------
+c4ad.34ba.1b37   500   Dynamic   gpon-onu_1/1/3:2         vport 1 
+
+
+Pengecekan mac perangkat
+https://macvendors.com/
