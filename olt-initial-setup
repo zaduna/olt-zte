@@ -1,0 +1,102 @@
+!
+set-pnp enable
+add-rack rackno 1 racktype C320Rack
+add-shelf rackno 1 shelfno 1 shelftype C320_SHELF
+!
+gpon
+  profile tcont SERVER type 4 maximum 1000000
+  onu profile vlan PPPOE tag-mode tag cvlan 100
+!  
+clock timezone GMT 7 0
+!
+pon
+  onu-type ALL-ONT gpon description 4ETH,2POTS,4WIFI
+  onu-type ALL-ONT gpon max-tcont 200
+  onu-type ALL-ONT gpon max-gemport 200
+  onu-type ALL-ONT gpon max-switch-perslot 200
+  onu-type ALL-ONT gpon max-flow-perswitch 200
+  onu-type ALL-ONT gpon max-iphost 127
+  onu-type-if ALL-ONT eth_0/1
+  onu-type-if ALL-ONT eth_0/2
+  onu-type-if ALL-ONT eth_0/3
+  onu-type-if ALL-ONT eth_0/4
+  onu-type-if ALL-ONT wifi_0/1
+  onu-type-if ALL-ONT wifi_0/2
+  onu-type-if ALL-ONT wifi_0/3
+  onu-type-if ALL-ONT wifi_0/4
+  uncfg-onu-display-info model sn pw 
+!
+onu-pnp
+!
+vlan 100
+  name pppoe
+!
+vlan 200
+  name dedicated
+!
+vlan 500
+  name remote
+!
+interface vlan 500
+  ip address 172.16.1.2 255.255.255.252
+!
+interface gpon-olt_1/2/7
+  no shutdown
+  linktrap disable
+  onu 1 type ALL-ONT sn ZTEGCD1E31C0
+!
+interface gpon-onu_1/2/7:1
+  name BUMDES
+  description SHARED20MBPS
+  tcont 1 profile SERVER
+  gemport 1 tcont 1
+  service-port 1 vport 1 user-vlan 100 vlan 100 
+!
+pon-onu-mng gpon-onu_1/2/7:1
+  service 1 gemport 1 cos 0 vlan 100
+  wan-ip 1 mode pppoe username 01bumdes password 01BUMDES vlan-profile PPPOE host 1
+!
+!
+pon-onu-mng gpon-onu_1/2/8:42
+  service 1 gemport 1 cos 0 vlan 200
+  vlan port veip_1 mode hybrid def-vlan 200
+!
+interface gei_1/4/1
+  no shutdown
+  hybrid-attribute fiber
+  negotiation auto
+  flowcontrol disable
+  linktrap enable
+  switchport mode hybrid
+  switchport vlan 100,200,500 tag
+  port-protect disable
+  uplink-isolate disable
+!
+interface xgei_1/4/2
+  phy-attribute lan
+  no shutdown
+  hybrid-attribute fiber
+  no negotiation auto
+  speed 10000
+  duplex full
+  flowcontrol disable
+  linktrap enable
+  switchport mode hybrid
+  switchport vlan 100,200,500 tag
+  port-protect disable
+  uplink-isolate disable
+!
+ip route 0.0.0.0 0.0.0.0 172.16.1.1
+!
+auto-write enable
+auto-write 23:59:00  everyday
+!
+snmp-server community ztero view AllView ro
+snmp-server community zterw view AllView rw
+!
+ssh server enable
+ssh server authentication mode local
+ssh server authentication type chap
+no ssh server only
+ssh server version 2
+!
